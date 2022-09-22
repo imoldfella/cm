@@ -10,8 +10,11 @@ import './index.css'
 // )
 import { EditorView, basicSetup } from "codemirror"
 import { javascript } from "@codemirror/lang-javascript"
+import { oneDark } from "./theme/one-dark"
 
 let editor = new EditorView({
-  extensions: [basicSetup, javascript()],
+  extensions: [basicSetup, 
+    oneDark, 
+    javascript()],
   parent: document.body
 })
